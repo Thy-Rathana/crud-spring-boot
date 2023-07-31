@@ -108,17 +108,17 @@ public class CrudService {
   //        $this->filters = $filters;
   //        }
 
-  protected Map<String, String> setFilters(ArrayList<String> fields, Map<String, String> options) {
-    Map<String, String> defaultFilters = defaultFilters();
-    Map<String, String> filters = new HashMap<String, String>();
-    Map<String, String> filterable = filterable();
-
-    for (String field : fields) {
-      //    if (hasValidFilterableField(field)) {
-      filters.put(filterable.getOrDefault(field, field), value(options.getOrDefault(field, "")));
-      //    }
-    }
-
-    return filters;
-  }
+//  protected Map<String, String> setFilters(ArrayList<String> fields, Map<String, String> options) {
+//    Map<String, String> defaultFilters = defaultFilters();
+//    Map<String, String> filters = new HashMap<String, String>();
+//    Map<String, String> filterable = filterable();
+//
+//    for (String field : fields) {
+//      //    if (hasValidFilterableField(field)) {
+//      filters.put(filterable.getOrDefault(field, field), value(options.getOrDefault(field, "")));
+//      //    }
+//    }
+//
+//    return filters;
+//  }
 }
